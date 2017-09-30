@@ -1,0 +1,120 @@
+:root {
+    --mdc-theme-primary: #009688;
+    --mdc-theme-background: #F5F5F5;
+    --mdc-theme-text-primary-on-primary: white;
+    --mdc-theme-text-primary-on-background: rgba(0, 0, 0, 0.87);
+}
+
+body {
+    margin: 0;
+}
+
+.flex {
+    flex: 1;
+}
+
+#toolbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    transition-property: height;
+    transition-delay: 2s;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.loaded #toolbar {
+    height: 80px;
+}
+
+#logo {
+    position: fixed;
+    height: 40%;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    transition-property: height, left, top, transform;
+    transition-delay: 2s;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.10, 0.2, 0.58, 1);
+}
+
+.loaded #logo {
+    height: 48px;
+    left: 16px;
+    top: 16px;
+    transform: none;
+}
+
+#title {
+    position: fixed;
+    font-size: 112px;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
+    font-weight: 300;
+    transition-property: font-size, left, top, transform;
+    transition-delay: 2s;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.loaded #title {
+    font-size: 48px;
+    left: 80px;
+    top: 0;
+    transform: none;
+    height: 80px;
+    line-height: 80px;
+}
+
+#features {
+    margin-top: calc(80px + 4vw);
+    margin-bottom: 4vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.feature-circle {
+    border-radius: 50%;
+    width: 20vw;
+    height: 20vw;
+    max-width: 180px;
+    max-height: 180px;
+    transition-property: box-shadow, -webkit-box-shadow, border-radius, width, height, max-width, max-height;
+    transition-duration: 280ms, 280ms, 2s, 2s, 2s, 2s, 2s;
+}
+
+.feature-circle.expanded {
+    border-radius: 2px;
+    width: 92vw;
+    height: auto;
+    max-width: none;
+    z-index: 1000;
+}
+
+.feature-circle-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 20vw;
+    max-width: 180px;
+    max-height: 180px;
+}
+
+.feature-circle-image-container img {
+    width: 10vw;
+    max-width: 90px;
+}
+
+.feature-circle-spacer {
+    max-width: 36px;
+}
+
+#file-transfer-image {
+    width: 15vw;
+    max-width: 135px;
+}
