@@ -79,27 +79,6 @@ body.loaded {
     line-height: 80px;
 }
 
-#home {
-    opacity: 1;
-    transition-property: opacity;
-    transition-duration: 0.5s;
-}
-
-#home.hidden {
-    opacity: 0;
-}
-
-#about {
-    opacity: 1;
-    transition-property: opacity;
-    transition-duration: 0.5s;
-    margin-top: 80px;
-}
-
-#about.hidden {
-    opacity: 0;
-}
-
 #features {
     margin-top: calc(80px + 4vw);
     margin-bottom: 4vw;
@@ -161,4 +140,13 @@ body.loaded {
 
 #feature-details > .hidden {
     opacity: 0;
+}
+
+#future img {
+    width: 98vw;
+}
+
+#future h2 {
+    margin-left: 32px;
+    margin-right: 32px;
 }
