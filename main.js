@@ -2,6 +2,10 @@ var home = document.querySelector('#home');
 var about = document.querySelector('#about');
 
 addEventListener('load', function () {
+    if (localStorage.getItem('asdf') === null) {
+        localStorage.setItem('asdf', 'asdf');
+        location.reload();
+    }
     document.body.classList.add('loaded');
 });
 
