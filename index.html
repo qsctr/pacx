@@ -14,32 +14,74 @@
         <div id="toolbar" class="mdc-theme--primary-bg"></div>
         <img id="logo" src="images/logo.png">
         <div id="title" class="mdc-theme--text-primary-on-primary">Pacx</div>
-        <div id="features">
-            <div class="flex"></div>
-            <div class="feature-circle mdc-theme--primary-bg mdc-elevation--z2 mdc-elevation-transition">
-                <div class="feature-circle-image-container">
-                    <img src="images/intuitive-ui-no-background.png">
+        <div id="home">
+            <div id="features">
+                <div class="flex"></div>
+                <div id="intuitive-ui" class="feature-circle mdc-theme--primary-bg mdc-elevation--z2 mdc-elevation-transition">
+                    <div class="feature-circle-image-container">
+                        <img src="images/intuitive-ui-no-background.png">
+                    </div>
+                </div>
+                <div class="flex feature-circle-spacer"></div>
+                <div id="convenient-organization" class="feature-circle mdc-theme--primary-bg mdc-elevation--z2 mdc-elevation-transition">
+                    <div class="feature-circle-image-container">
+                        <img src="images/convenient-organization-no-background.png">
+                    </div>
+                </div>
+                <div class="flex feature-circle-spacer"></div>
+                <div id="easy-access" class="feature-circle mdc-theme--primary-bg mdc-elevation--z2 mdc-elevation-transition">
+                    <div class="feature-circle-image-container">
+                        <img src="images/easy-access-no-background.png">
+                    </div>
+                </div>
+                <div class="flex feature-circle-spacer"></div>
+                <div id="efficient-file-transfer" class="feature-circle mdc-theme--primary-bg mdc-elevation--z2 mdc-elevation-transition">
+                    <div class="feature-circle-image-container">
+                        <img id="file-transfer-image" src="images/efficient-file-transfer-no-background.png">
+                    </div>
+                </div>
+                <div class="flex"></div>
+            </div>
+            <div id="feature-details">
+                <div id="feature-detail">
+                    <p>Click on the icons above to learn more about Pacx.</p>
+                </div>
+                <div id="intuitive-ui-detail" class="hidden" style="display: none;">
+                    <h1 class="mdc-typography--display3">Intuitive UI</h1>
+                    <p>Our program is designed to have a highly visual user interface, with intuitive user interactions. Sending files with our program is as simple as dragging the file and dropping it on top of the widget.</p>
+                    <p>Instead of using the typical, drab file folders used in traditional programs, our interface separates files into different modules which are easily distinguished. Over time our program will learn which modules are more useful and thus sort by relevance.</p>
+                    <p>Modules is our biggest innovation. Traditional folders are not graphical, and do not provide any preview of the content within. Our modules are more aesthetically pleasing and provide more information of the folders within the module to allow users to find what they need faster.</p>
+                    <p>Simple animations built into our application create a dynamic and aesthetically pleasing experience.</p>
+                </div>
+                <div id="convenient-organization-detail" class="hidden" style="display: none;">
+                    <h1 class="mdc-typography--display3">Convenient Organization</h1>
+                    <p>The organization of our application makes it perfect for usage in teams, both large and small. We provide the framework to organize your files instead of forcing you to create all of the folders. With Pacx, we place a large priority on saving time, no matter how little time we save. To do this, we allow you to instantly create the framework for the folders not by creating the folders than sharing them. Instead by simply sharing with your team members, we create the folder for you.</p>
+                    <p>Inside each UI module are your personalized to-do lists, with assignment due-dates, notifications from widgets, and chats for communication. This obviously has great applications in schools like TAS.</p>
+                </div>
+                <div id="easy-access-detail" class="hidden" style="display: none;">
+                    <h1 class="mdc-typography--display3">Easy access</h1>
+                    <p>To access the program, simply click on the widget to get a quick view of what you need which includes the teams you are a part of, and the to-do lists from your various teams.</p>
+                    <p>Notifications for file requests appear directly as an overlay on top of your work, while still remaining as minimally intrusive as possible.</p>
+                    <p>Combine our desktop widget with pre-existing teams, by connecting your slack, google drive and trello. There is no need to create new account or sign-up with your email address.</p>
+                    <p>Tasks from trello are put in your tasks module, chats from slack are put in either the chat or announcements module, and google drive appears in the file directory module.</p>
+                </div>
+                <div id="efficient-file-transfer-detail" class="hidden" style="display: none;">
+                    <h1 class="mdc-typography--display3">Efficient file transfer</h1>
+                    <p>Many file transfer programs require long set-up, we minimize that process to make file sharing as painless as possible.</p>
+                    <p>There is no need to search for a document someone once shared with you. Documents are sorted by relevancy and clicking on a user will bring up the documents that are shared between the two of you.</p>
+                    <p>We allow users to request for files to be shared, instead of having to wait for their team members to share that file of their own volition.</p>
+                    <p>Our desktop widget allows you to simply drag and drop to upload or share files.</p>
                 </div>
             </div>
-            <div class="flex feature-circle-spacer"></div>
-            <div class="feature-circle mdc-theme--primary-bg mdc-elevation--z2 mdc-elevation-transition">
-                <div class="feature-circle-image-container">
-                    <img src="images/convenient-organization-no-background.png">
+            <div id="quotes-container" class="mdc-theme--primary-bg mdc-theme--text-primary-on-primary">
+                <div id="quotes">
+                    <h2 class="mdc-typography--display1">"If you can combine Slack, Trello and Google Drive... and do it well... I would pay for it" - Dr. Nelson</h2>
+                    <h2 class="mdc-typography--display1">"Cool, good idea." - Mr. Fagen</h2>
                 </div>
             </div>
-            <div class="flex feature-circle-spacer"></div>
-            <div class="feature-circle mdc-theme--primary-bg mdc-elevation--z2 mdc-elevation-transition">
-                <div class="feature-circle-image-container">
-                    <img src="images/easy-access-no-background.png">
-                </div>
-            </div>
-            <div class="flex feature-circle-spacer"></div>
-            <div class="feature-circle mdc-theme--primary-bg mdc-elevation--z2 mdc-elevation-transition">
-                <div class="feature-circle-image-container">
-                    <img id="file-transfer-image" src="images/efficient-file-transfer-no-background.png">
-                </div>
-            </div>
-            <div class="flex"></div>
+        </div>
+        <div id="about" class="hidden" style="display: none;">
+            asdfdsafasdfasdfsafdasdfsf
         </div>
         <script src="node_modules/material-components-web/dist/material-components-web.js"></script>
         <script src="main.js"></script>
